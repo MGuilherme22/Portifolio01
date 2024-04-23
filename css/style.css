@@ -18,7 +18,8 @@ body{
 }
 .btn-contato button{
     padding: 10px 40px;
-    font-size: 18px;font-weight: 600;
+    font-size: 18px;
+    font-weight: 600;
     background-color: #00ff08;
     border: 0;
     border-radius: 30px;
@@ -164,5 +165,124 @@ section.sobre .flex{
 /* ESTILO PORTIFOLIO */
 
 section.portifolio{
-    
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff09;
+}
+section.portifolio .flex{
+    justify-content: space-around;
+    margin-top: 60px;
+}
+.img-port{
+    width: 360px;
+    height: 460px;
+    background-color: #00ff08;
+    background-size: cover;
+    background-position: 100% 0%;
+    cursor: pointer;
+    border-radius: 40px;
+    transition: 8s;
+    position: relative;
+}
+.img-port:hover{
+    background-position: 100% 100%;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    background-color: #00000077;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+    transition: .5s;
+}
+.overlay:hover{
+    opacity: 1;
+}
+/* ESTILO DO FORMULARIO */
+
+section.formulario{
+    padding: 80px 4%;
+}
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: #242424;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+}
+form textarea{
+    resize: none;
+    max-height: 180px;
+}
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+form .btn-enviar input[type=submit]{
+    width: 120px;
+    background-color: #00ff08;
+    color: #000;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .2s;
+}
+form .btn-enviar input[type=submit]:hover{
+    box-shadow: 0px 0px 8px #00ff089d;
+    transform: scale(1.05);
+}
+/* ESTILO DO RODAPE */
+
+footer{
+    padding: 50px 4%;
+    box-shadow: 0 0 40px 10px #ffffff09;
+}
+footer .flex{
+    justify-content: space-between;
+}
+.btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+    background-color: #00ff08;
+    font-size: 23px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+footer .line-footer{
+    padding: 25px 0;
+}
+.borda{
+    border-top: 2px solid #00ff08;
+}
+footer .line-footer p i{
+    color: #00ff08;
+    font-size: 25px;
+}
+footer .line-footer p a{
+    color: #fff;
+    text-decoration: none;
+    margin: 0px 8px;
 }
