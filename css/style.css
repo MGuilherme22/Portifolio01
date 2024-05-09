@@ -49,6 +49,7 @@ header{
 }
 .logo img{
     width: 220px;
+    margin-left: -85px;
 }
 header > .interface{
     display: flex;
